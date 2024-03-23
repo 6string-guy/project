@@ -8,18 +8,16 @@ dotenv.config({
 
 
 
-const app= express()
+//const app= express()
 
-
+ 
 const connectDB= async  function()
 {
     try {
     const connectionInstance=    await  mongoose.connect(`${process.env.MONGODB_URL}/${DB_NAME}`)
-    console.log(connectionInstance)
-    console.log( "ho gya connection")
-        app.listen(process.env.PORT,()=>{
-            console.log("sun rha hai " ,process.env.PORT  )
-        })
+    //console.log(connectionInstance)
+    console.log( "ho gya database connection")
+      
         
     } catch (error) {
         console.log( "Err",error)
