@@ -12,6 +12,7 @@ connectDB().then(
         app.listen(process.env.PORT ||8000,()=>{
             console.log("sun rha hai " ,process.env.PORT  )
         })
+       // app.get("/", ()=>(console.log("SANSKAR")))
     }
 )
 .catch(
